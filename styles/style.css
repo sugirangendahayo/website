@@ -142,6 +142,101 @@
     font-weight: 500;
 } */
 
+.message-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(19, 19, 50);
+    padding: 0.2rem 2rem;
+    margin: 2rem;
+    border-radius: 0.8rem;
+    
+}
+.message-text span:first-child{
+ background-color: #4ecdc4;
+ padding: 1rem;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+.message-icon{
+    width: 2rem;
+    height: 2rem;
+}
+.message-text{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+.message-button{
+    padding: 1rem;
+    background-color: rgb(33, 101, 211);
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.message-blogs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    gap: 1rem;
+    cursor: pointer;
+}
+.message-blog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0.8rem;
+    background-color: rgb(33, 101, 211);
+    color: #fff;
+}
+.message-blog-content{
+    gap: 1rem;
+    padding: 0 1rem;
+    
+   
+}
+.access-button{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 0.5rem;
+}
+.message-endblog-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* .message-blog-content span:first-child{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.message-blog-content span:last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+.message-blog-content span:last-child img{
+    width: 2rem;
+    height: 2rem;
+}
+*/
+.message-blog-image{
+    width: 10rem;
+    height:10rem;
+    border-radius: 0 0.8rem 0.8rem 0;
+} 
+
+
 /* Hamburger Menu */
 .hamburger {
   display: none;
