@@ -9,7 +9,7 @@ hamburger.addEventListener('click', () => {
     document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
 });
 
-// Close mobile menu when clicking on a nav link
+
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         if (window.innerWidth <= 992) {
@@ -20,7 +20,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Sticky navbar on scroll
+
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         document.querySelector('.navbar').classList.add('sticky');
@@ -29,7 +29,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add active class to current page link
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav-links a').forEach(link => {
     if (link.getAttribute('href') === currentPage) {

@@ -3,11 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  font-family: "Quicksand", sans-serif;
 }
 
 :root {
-  --primary-color: #ff6b6b;
+ 
   --secondary-color: #4ecdc4;
   --dark-color: #2d3436;
   --light-color: #f9f9f9;
@@ -41,13 +42,9 @@
 .logo a {
   font-size: 1.8rem;
   font-weight: 700;
-  color: rgb(30, 193, 219);
+  color: var(--secondary-color);
   text-decoration: none;
   transition: var(--transition);
-}
-
-.logo span {
-  color: var(--primary-color);
 }
 
 .nav-links {
@@ -65,25 +62,13 @@
   padding: 0.5rem 0;
 }
 
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--primary-color);
-  transition: var(--transition);
-}
-
 .nav-links a:hover::after,
 .nav-links a.active::after {
   width: 100%;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-  color: var(--primary-color);
+.nav-links a:hover {
+  color: var(--secondary-color);
 }
 
 .auth-buttons {
@@ -116,11 +101,7 @@
   color: white;
 }
 
-.btn-signup:hover {
-  background: #ff5252;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
-}
+
 
 /* Hamburger Menu */
 .hamburger {
