@@ -382,8 +382,75 @@
     overflow-x: auto;
     margin: 0 auto;
 }
+.end-hero{
+      height: 70vh;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 
+}
+.end-hero-content{
+    width: 30%;
+    height: 85%;
+    margin: 0 3rem;
+    background-color: #fff;
+    border-radius: 0.8rem;
+    padding: 2rem;
+}
+.access-button{
+  padding: 1rem;
+  background-color: rgb(33, 101, 211);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
 
+   details {
+            width: 100%;
+            margin: 0 auto;
+            font-family: sans-serif;
+            /* border: 1px solid #ccc; */
+            border-radius: 5px;
+            padding: 0.5rem;
+            /* margin-bottom: 1rem; */
+        }
+
+        summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem;
+            font-weight: 700;
+        }
+
+        summary::after {
+            content: '▶';
+            display: inline-block;
+            margin-left: 1rem;
+            transition: transform 0.2s ease;
+        }
+
+        details[open] summary::after {
+            transform: rotate(90deg);
+        }
+
+        .content {
+            padding: 0.5rem 1rem;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+.footer-title{
+  padding: 1rem 0;
+}
 
 /* Hamburger Menu */
 .hamburger {
